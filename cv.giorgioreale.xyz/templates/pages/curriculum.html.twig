@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+{% block title %}Curriculum{% endblock %}
+{% block page_url %}/curriculum{% endblock %}
+{% block robots %}index,follow{% endblock %}
+{% block body_id %}curriculum{% endblock %}
+{% block aside %}
+<aside>
+    <img src="assets/images/profile-pictures/Giorgio-Reale.jpg" alt="{{ first_name }} {{ last_name }}">
+    <h1>{{ first_name }} {{ last_name }}</h1>
+    <h2>{{ role }}</h2>
+    <ul>
+        <li><b>Città</b>:<br>{{ position.locality }}</li>
+        <li><b>Data di nascita</b>:<br>{{ date_of_birth }} ({{ age }})
+        </li>
+        <li><b>Sito Web</b>:<br><a href="https://{{ website_main.domain }}/">{{ website_main.domain }}</a></li>
+        <li><b>E-Mail</b>:<br><a href="mailto:{{ email_cv }}">{{ email_cv }}</a></li>
+    </ul>
+    <div>
+        {% for social in socials %}
+        {% if social.social_name in ['linkedin', 'github', 'gitlab'] %}
+        <a href="{{ social.link }}" target="_blank" aria-label="{{ social.social_full_name }}" title="{{ social.social_full_name }}">
+            <svg>
+                <use xlink:href="/assets/icons/website/sprites.svg#{{ social.social_name }}" />
+            </svg>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</aside>
+{% endblock %}
+{% block content %}
+<main>
+    <h3 id="info">Informazioni su di me</h3>
+    <p>{{ description }}</p>
+    <h3 id="esperienza">Esperienza</h3>
+    <div class="experience-formation">
+        {% for work_experience in work_experiences %}
+        <div>
+            <h4>{{ work_experience.role }}</h4>
+            <p><b>{{ work_experience.company }}</b>, {{ work_experience.location }}</p>
+            <p>{{ work_experience.start_date }} - {{ work_experience.end_date }}</p>
+            <p>{{ work_experience.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <h3 id="altri-progetti">Altri Progetti</h3>
+    <div class="other-projects">
+        {% for project in other_projects %}
+        <div>
+            <h4>{{ project.title }}</h4>
+            <p>{{ project.start_date }} - {{ project.end_date }}</p>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.link }}" target="_blank">{{ project.link_title }}</a>
+        </div>
+        {% endfor %}
+    </div>
+    <h3 id="formazione">Formazione</h3>
+    <div class="experience-formation">
+        {% for education in educations %}
+        <div>
+            <h4>{{ education.title }}</h4>
+            <p><b>{{ education.institute }}</b>, {{ education.location }}</p>
+            <p>{{ education.start_date }} - {{ education.end_date }}</p>
+            <p>{{ education.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <h3 id="skills">Skills</h3>
+    <div class="skills">
+        {% for skill in skills %}
+        <svg>
+            <use xlink:href="/assets/icons/website/sprites.svg#{{ skill }}" />
+        </svg>
+        {% endfor %}
+    </div>
+    <h3 id="corsi-certificazioni">Corsi & Certificazioni</h3>
+    <div class="training-courses">
+        {% for courses_certification in courses_certifications %}
+        <div>
+            <h4>{{ courses_certification.title }}</h4>
+            <p><b>Rilasciato da</b>: {{ courses_certification.released_by }}</p>
+            <p><b>Rilasciato in data</b>: {{ courses_certification.released_on }}</p>
+            {% if courses_certification.certificate_id is defined %}
+            <p><b>ID certificato</b>: {{ courses_certification.certificate_id }}</p>
+            {% endif %}
+            <a href="{{ courses_certification.link }}" target="_blank">Certificato</a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="legal-notice">
+        <p>Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base all'art. 13 del D. Lgs. 196/2003 e all'art. 13 GDPR (Regolamento UE 2016/679) ai soli fini della ricerca e selezione del personale.</p>
+    </div>
+</main>
+<div class="download-cv">
+    <h4>Scarica CV</h4>
+    <p>Ottieni una copia del CV in PDF</p>
+    <button id="button-download-print-cv">Download</button>
+</div>
+{% endblock %}

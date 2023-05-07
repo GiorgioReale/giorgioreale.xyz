@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block page_url %}/{% endblock %}
+{% block robots %}index,follow{% endblock %}
+{% block body_id %}homepage{% endblock %}
+{% block aside %}
+<aside>
+</aside>
+{% endblock %}
+
+{% block content %}
+<main>
+    <h1>{{ first_name }} {{ last_name }}</h1>
+    <h2>{{ role }}</h2>
+    <a href="/curriculum" aria-label="Curriculum">
+        <svg>
+            <use xlink:href="/assets/icons/website/sprites.svg#right-arrow" />
+        </svg>
+    </a>
+</main>
+{% endblock %}

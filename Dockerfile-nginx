@@ -1,0 +1,28 @@
+FROM node:19.7-slim as assets-builder
+RUN npm install -g sass uglify-js
+COPY /assets/fonts /app/fonts
+COPY /assets/styles /app/styles
+RUN sass --no-source-map /app/styles/giorgioreale.xyz.scss /app/styles/giorgioreale.xyz.css --style=compressed
+RUN sass --no-source-map /app/styles/cv.giorgioreale.xyz.scss /app/styles/cv.giorgioreale.xyz.css --style=compressed
+COPY /assets/scripts /app/scripts
+RUN uglifyjs /app/scripts/giorgioreale.xyz/light-dark-mode.js -o /app/scripts/giorgioreale.xyz/giorgioreale.xyz.js -c -m
+RUN uglifyjs /app/scripts/cv.giorgioreale.xyz/download-print-cv.js /app/scripts/cv.giorgioreale.xyz/light-dark-mode.js /app/scripts/cv.giorgioreale.xyz/open-close-menu.js -o /app/scripts/cv.giorgioreale.xyz/cv.giorgioreale.xyz.js -c -m
+FROM nginx:1.23
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY /giorgioreale.xyz /var/www/giorgioreale.xyz
+COPY /assets/audios /var/www/giorgioreale.xyz/public/assets/audios
+COPY /assets/fonts /var/www/giorgioreale.xyz/public/assets/fonts
+COPY /assets/icons/giorgioreale.xyz /var/www/giorgioreale.xyz/public/assets/icons
+COPY /assets/icons/giorgioreale.xyz/logos/favicon.ico /var/www/giorgioreale.xyz/public/favicon.ico
+COPY /assets/images/giorgioreale.xyz /var/www/giorgioreale.xyz/public/assets/images
+COPY --from=assets-builder /app/styles/giorgioreale.xyz.css /var/www/giorgioreale.xyz/public/assets/styles/giorgioreale.xyz.css
+COPY --from=assets-builder /app/scripts/giorgioreale.xyz/giorgioreale.xyz.js /var/www/giorgioreale.xyz/public/assets/scripts/giorgioreale.xyz.js
+COPY /cv.giorgioreale.xyz /var/www/cv.giorgioreale.xyz
+COPY /assets/audios /var/www/cv.giorgioreale.xyz/public/assets/audios
+COPY /assets/fonts /var/www/cv.giorgioreale.xyz/public/assets/fonts
+COPY /assets/icons/cv.giorgioreale.xyz /var/www/cv.giorgioreale.xyz/public/assets/icons
+COPY /assets/icons/cv.giorgioreale.xyz/logos/favicon.ico /var/www/cv.giorgioreale.xyz/public/favicon.ico
+COPY /assets/images/cv.giorgioreale.xyz /var/www/cv.giorgioreale.xyz/public/assets/images
+COPY --from=assets-builder /app/styles/cv.giorgioreale.xyz.css /var/www/cv.giorgioreale.xyz/public/assets/styles/cv.giorgioreale.xyz.css
+COPY --from=assets-builder /app/scripts/cv.giorgioreale.xyz/cv.giorgioreale.xyz.js /var/www/cv.giorgioreale.xyz/public/assets/scripts/cv.giorgioreale.xyz.js
+CMD ["nginx", "-g", "daemon off;"]

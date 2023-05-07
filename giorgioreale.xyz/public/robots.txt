@@ -1,0 +1,2 @@
+Sitemap: https://giorgioreale.xyz/sitemap.xml
+Sitemap: http://giorgioreale.xyz/sitemap.xml

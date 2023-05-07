@@ -1,0 +1,251 @@
+{
+    "first_name": "Giorgio",
+    "last_name": "Reale",
+    "role": "Developer",
+    "date_of_birth": "26-05-1998",
+    "position": {
+        "locale": "it_IT",
+        "locality": "Parma (PR)",
+        "region": "Emilia Romagna",
+        "postal_code": "43058",
+        "country_name": "ITA",
+        "latitude": "44.80158315674785",
+        "longitude": "10.329004913562171"
+    },
+    "website_main": {
+        "domain": "giorgioreale.xyz",
+        "title": "Giorgio Reale",
+        "description": "Sito Web di Giorgio Reale"
+    },
+    "website_cv": {
+        "domain": "cv.giorgioreale.xyz",
+        "title": "Giorgio Reale - WebCV",
+        "description": "WebCV di Giorgio Reale",
+        "keywords": [
+            "Curriculum",
+            "CV",
+            "Developer",
+            "Dev",
+            "Frontend Developer",
+            "PHP Developer",
+            "Sviluppatore",
+            "Web Developer", 
+            "Web Dev", 
+            "Sviluppatore Web",
+            "Parma", 
+            "Reggio nell'Emilia"
+        ]
+    },
+    "websites": [],
+    "email_main": "info@giorgioreale.xyz",
+    "email_cv": "career@giorgioreale.xyz",
+    "emails": [],
+    "socials": [
+        {
+            "social_name": "linkedin",
+            "social_full_name": "LinkedIn",
+            "link": "https://linkedin.com/in/giorgioreale",
+            "profile_nickname": "Giorgio Reale"
+        },
+        {
+            "social_name": "github",
+            "social_full_name": "GitHub",
+            "link": "https://github.com/GiorgioReale",
+            "profile_nickname": "GiorgioReale"
+        },
+        {
+            "social_name": "gitlab",
+            "social_full_name": "GitLab",
+            "link": "https://gitlab.com/GiorgioReale",
+            "profile_nickname": "@GiorgioReale"
+        },
+        {
+            "social_name": "twitter",
+            "social_full_name": "Twitter",
+            "link": "https://twitter.com/GiorgioRealeXYZ",
+            "profile_nickname": "@GiorgioRealeXYZ"
+        },
+        {
+            "social_name": "reddit",
+            "social_full_name": "Reddit",
+            "link": "https://www.reddit.com/user/GiorgioReale",
+            "profile_nickname": "u/GiorgioReale"
+        },
+        {
+            "social_name": "instagram",
+            "social_full_name": "Instagram",
+            "link": "https://www.instagram.com/giorgioreale",
+            "profile_nickname": "giorgioreale"
+        }
+    ],
+    "description": "Sono un Developer fortemente affascinato dalla tecnologia ed ho una forte e radicata passione per lo sviluppo software, tanto che ho deciso di farne la mia professione.\nSono una persona pratica: apprendo velocemente, con impegno ed in autonomia.\nNon mi accontento: cerco con costanza di aumentare e migliorare le mie competenze e di approfondire le mie conoscenze.\nMi sono diplomato presso I.T.E. G.B. Bodoni in Amministrazione Finanza e Marketing nell'articolazione Sistemi Informativi Aziendali sviluppando competenze relative alla gestione aziendale nel suo insieme e all'interpretazione di risultati economici. In grado anche di gestire, valutare e adattare sistemi informativi aziendali e software applicativi.",
+    "work_experiences": [
+        {
+            "role": "Web Developer Specialist",
+            "company": "Custom S.p.A.",
+            "location": "Fontevivo (PR)",
+            "start_date": "Mar 2023",
+            "end_date": "Presente",
+            "description": ""
+        },
+        {
+            "role": "Frontend & PHP developer",
+            "company": "M4SS S.r.l.",
+            "location": "Reggio nell'Emilia (RE)",
+            "start_date": "Mag 2022",
+            "end_date": "Feb 2023",
+            "description": "Sviluppo e ottimizzazione di applicativi web utilizzando HTML, CSS (o SCSS), JavaScript, PHP e SQL."
+        },
+        {
+            "role": "Web Developer",
+            "company": "ExtraWeb Parma S.r.l.",
+            "location": "Parma (PR)",
+            "start_date": "Ago 2021",
+            "end_date": "Mar 2022",
+            "description": "Realizzazione di Siti Web personalizzati con il CMS WordPress utilizzando i page builder Elementor e WPBakery, integrando anche funzionalità ad hoc con HTML, CSS, PHP e JavaScript."
+        },
+        {
+            "role": "Commesso",
+            "company": "VapeSmoke S.r.l.s.",
+            "location": "Sorbolo Mezzani (PR)",
+            "start_date": "Mag 2018",
+            "end_date": "Lug 2021",
+            "description": "Gestione negozio di sigarette elettroniche occupandomi di esporre, tenere in ordine e vendere prodotti, assistendo e orientando il cliente nella scelta di acquisto, gestione dell'inventario e degli ordini."
+        },
+        {
+            "role": "Operaio",
+            "company": "Consorzio Ciemme Parma S.r.l.",
+            "location": "Sorbolo Mezzani (PR)",
+            "start_date": "Lug 2016",
+            "end_date": "Ago 2016",
+            "description": "Operaio manutentore di impianti industriali presso EULIP S.p.A., impresa specializzata nella lavorazione di oli vegetali, per conto di Consorzio Ciemme Parma."
+        },
+        {
+            "role": "Impiegato",
+            "company": "Comune di Sorbolo",
+            "location": "Sorbolo Mezzani (PR)",
+            "start_date": "Feb 2016",
+            "end_date": "Feb 2016",
+            "description": "Grazie al progetto “Scuola-Lavoro” ho avuto la possibilità di poter mettere in pratica ciò che ho appreso durante il percorso di studi superiori, ho svolto mansioni di vario genere tra cui l'utilizzo di software per la contabilità e l'utilizzo di database per gestire i dati delle scuole elementari e medie del Comune di Sorbolo."
+        }
+    ],
+    "other_projects": [
+        {
+            "title": "Realizzazione Sito Web svapoyeah.com",
+            "start_date": "Apr 2022",
+            "end_date": "Apr 2022",
+            "description": "Progettazione, realizzazione e pubblicazione del restyling del sito web di Svapo Yeah, attività locale specializzata nella vendita al dettaglio di sigarette elettroniche. Il Progetto è stato realizzato con WordPress sviluppando un tema completamente custom e utilizzando il minor numero di plugin possibile per garantire un'ottima velocità e sicurezza del sito.",
+            "link": "https://www.svapoyeah.com/",
+            "link_title": "Visita sito"
+        }
+    ],
+    "educations": [
+        {
+            "title": "Diploma",
+            "institute": "I.T.E. G.B. Bodoni",
+            "location": "Parma (PR)",
+            "start_date": "Set 2011",
+            "end_date": "Lug 2017",
+            "description": "Diploma di istruzione tecnica in Amministrazione Finanza e Marketing nell'articolazione Sistemi Informativi Aziendali. Competenze generali nel campo dei macrofenomeni economici nazionali ed internazionali, della normativa civilistica e fiscale, dei sistemi e processi aziendali (organizzazione, pianificazione, programmazione, amministrazione, finanza e controllo), degli strumenti di marketing, dei prodotti assicurativo-finanziari e dell'economia sociale. Integra le competenze dell'ambito professionale specifico con quelle linguistiche e informatiche per operare nel sistema informativo dell'azienda e contribuire sia all'innovazione sia al miglioramento organizzativo e tecnologico dell'impresa inserita nel contesto internazionale. Competenze sia all'ambito della gestione del sistema informativo aziendale sia alla valutazione, alla scelta e all'adattamento di software applicativi. Tali attività sono tese a migliorare l'efficienza aziendale attraverso la realizzazione di nuove procedure, con particolare riguardo al sistema di archiviazione, all'organizzazione della comunicazione in rete e alla sicurezza informatica."
+        }
+    ],
+    "skills": [
+        "sass-scss",
+        "javascript",
+        "php",
+        "git",
+        "docker",
+        "linux"
+    ],
+    "courses_certifications": [
+        {
+            "title": "PHP",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/Certificate/1059-25515518/jpg"
+        },
+        {
+            "title": "SQL",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/certificates/course/en/25515518/1060/landscape/png"
+        },
+        {
+            "title": "Responsive Web Design course",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/Certificate/1162-25515518/jpg"
+        },
+        {
+            "title": "Web Development Fundamentals course",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/Certificate/1141-25515518/jpg"
+        },
+        {
+            "title": "JavaScript",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/certificates/course/en/25515518/1024/landscape/png"
+        },
+        {
+            "title": "CSS",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/Certificate/1023-25515518/jpg/"
+        },
+        {
+            "title": "HTML",
+            "released_by": "Sololearn",
+            "released_on": "apr 2022",
+            "link": "https://www.sololearn.com/Certificate/1014-25515518/jpg"
+        },
+        {
+            "title": "LPI - Exam 101",
+            "released_by": "Udemy",
+            "released_on": "mag 2021",
+            "link": "https://www.udemy.com/certificate/UC-c51dfd74-86a1-4388-b4d7-db78df2a5434/"
+        },
+        {
+            "title": "Concetti fondamentali di Google Tag Manager",
+            "released_by": "Google Analytics",
+            "released_on": "mag 2021",
+            "link": "https://analytics.google.com/analytics/academy/certificate/9RpDawenRwO6YWm5IeEpkQ"
+        },
+        {
+            "title": "Google Analytics avanzato",
+            "released_by": "Google Analytics",
+            "released_on": "mag 2021",
+            "link": "https://analytics.google.com/analytics/academy/certificate/CAF2ji9fT16rXaJqsLJ6HA"
+        },
+        {
+            "title": "Google Analytics per principianti",
+            "released_by": "Google Analytics",
+            "released_on": "mag 2021",
+            "link": "https://analytics.google.com/analytics/academy/certificate/aNP2xoyLT-WpIRyd6gg_vQ"
+        },
+        {
+            "title": "LPI - Linux Essentials",
+            "released_by": "Udemy",
+            "released_on": "nov 2020",
+            "link": "https://www.udemy.com/certificate/UC-b9d3655c-b1a5-425d-98c3-0aa54d3f1dcd/"
+        },
+        {
+            "title": "Fondamenti di Marketing Digitale",
+            "released_by": "Google",
+            "released_on": "ott 2020",
+            "certificate_id": "A57 UJQ 4FY",
+            "link": "https://learndigital.withgoogle.com/digitaltraining/validate-certificate-code"
+        },
+        {
+            "title": "Formazione generale e specifica per lavoratori a rischio basso",
+            "released_by": "IFOA",
+            "released_on": "nov 2018",
+            "link": "https://drive.google.com/file/d/1vjJ_OXX4B4ihRWCFKTxU4vu8RLP7fPyk/view?usp=sharing"
+        }
+    ],
+    "github_repository": {
+        "name": "giorgioreale.xyz",
+        "link": "https://github.com/GiorgioReale/giorgioreale.xyz"
+    }
+}

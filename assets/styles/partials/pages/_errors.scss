@@ -1,0 +1,57 @@
+@use '../variables' as *;
+
+#errors {
+
+    section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+
+        main {
+            text-align: center;
+
+            h1 {
+                font-family: 'Fira Code VF', 'Fira Code', monospace;
+                font-variation-settings: 'wght' 400;
+                font-weight: 400;
+                line-height: 0.8;
+
+                &:nth-child(1) {
+                    text-transform: uppercase;
+                    font-size: 3.23rem;
+                }
+
+                &:nth-child(2) {
+                    font-size: 6.45rem;
+                }
+
+                span {
+                    color: var(--color-text-primary-reverse);
+                }
+            }
+
+            p {
+                font-size: 1.392rem;
+                margin: -15px 0 0 0;
+            }
+
+            a {
+                color: var(--color-buttons-primary);
+                background-color: var(--background-buttons-primary);
+                border: none;
+                padding: 15px 30px 15px 30px;
+                margin: 10px 0 0 0;
+                font-size: 0.9rem;
+
+                &:hover {
+                    color: var(--color-buttons-primary-hover);
+                    background-color: var(--background-buttons-primary-hover);
+                }
+            }
+        }
+    }
+}

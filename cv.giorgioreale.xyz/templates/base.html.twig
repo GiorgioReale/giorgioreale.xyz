@@ -1,0 +1,114 @@
+<html dir="ltr" lang="it-IT">
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="generator" content="Code OSS" />
+	<meta name="title" content="{% if block('title') is defined %}{{ block('title') }} · {% endif %}{{ website_cv.title }}" />
+	<meta name="description" content="{{ website_cv.description }}" />
+	<meta name="keywords" content="{{ first_name }} {{ last_name }}, {% for keyword in website_cv.keywords %}{{ keyword }}{% if loop.last == false  %}, {% endif%}{% endfor %}" />
+	<meta name="subject" content="{{ first_name }} {{ last_name }}" />
+	<meta name="copyright" content="{{ first_name }} {{ last_name }}" />
+	<meta name="language" content="IT" />
+	<meta name="dc.language" content="ita" />
+	<meta http-equiv="content-language" content="IT" />
+	<meta name="robots" content="{{ block('robots') }}" />
+	<meta name="topic" content="{{ website_cv.description }}" />
+	<meta name="summary" content="{{ website_cv.description }}" />
+	<meta name="Classification" content="Business" />
+	<meta name="author" content="{{ first_name }} {{ last_name }}, {{ email_main }}" />
+	<meta name="designer" content="{{ first_name }} {{ last_name }}" />
+	<meta name="copyright" content="{{ first_name }} {{ last_name }}" />
+	<meta name="reply-to" content="{{ email_cv }}" />
+	<meta name="owner" content="{{ first_name }} {{ last_name }}" />
+	<meta name="url" content="https://{{ website_cv.domain }}{% if block('page_url') is defined %}{{ block('page_url') }}{% else %}/{% endif %}" />
+	<meta name="identifier-URL" content="https://{{ website_cv.domain }}{% if block('page_url') is defined %}{{ block('page_url') }}{% else %}/{% endif %}" />
+	<meta name="target" content="all" />
+	<meta name="audience" content="all" />
+	<meta name="coverage" content="Worldwide" />
+	<meta name="distribution" content="Global" />
+	<meta name="rating" content="General" />
+	<meta name="revisit-after" content="7 days" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta property="og:title" content="{% if block('title') is defined %}{{ block('title') }} · {% endif %}{{ website_cv.title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://{{ website_cv.domain }}{% if block('page_url') is defined %}{{ block('page_url') }}{% else %}/{% endif %}" />
+	<meta property="og:image" content="https://{{ website_cv.domain }}/assets/images/social-card/social-card.png" />
+	<meta property="og:image:url" content="https://{{ website_cv.domain }}/assets/images/social-card/social-card.png" />
+	<meta property="og:image:secure_url" content="https://{{ website_cv.domain }}/assets/images/social-card/social-card.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:site_name" content="{{ website_cv.title }}" />
+	<meta property="og:description" content="{{ website_cv.description }}" />
+	<meta property="og:email" content="{{ email_cv }}" />
+	<meta property="og:locale" content="{{ position.locale }}" />
+	<meta property="og:locality" content="{{ position.locality }}" />
+	<meta property="og:region" content="{{ position.region }}" />
+	<meta property="og:postal-code" content="{{ position.postal_code }}" />
+	<meta property="og:country-name" content="{{ position.country_name }}" />
+	<meta property="og:latitude" content="{{ position.latitude }}" />
+	<meta property="og:longitude" content="{{ position.longitude }}" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="https://{{ website_cv.domain }}{% if block('page_url') is defined %}{{ block('page_url') }}{% else %}/{% endif %}" />
+	<meta name="twitter:title" content="{% if block('title') is defined %}{{ block('title') }} · {% endif %}{{ website_cv.title }}" />
+	<meta name="twitter:description" content="{{ website_cv.description }}" />
+	<meta name="twitter:image" content="https://{{ website_cv.domain }}/assets/images/social-card/social-card.png" />
+	<meta name="twitter:site" content="{% for social in socials %}{% if social.social_name == 'twitter' %}{{ social.profile_nickname }}{% endif %}{% endfor %}" />
+	<title>{% if block('title') is defined %}{{ block('title') }} · {% endif %}{{ website_cv.title }}</title>
+	<link rel="canonical" href="https://{{ website_cv.domain }}{% if block('page_url') is defined %}{{ block('page_url') }}{% else %}/{% endif %}" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/logos/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/logos/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/logos/favicon-16x16.png" />
+	<link rel="icon" type="image/svg+xml" href="/assets/icons/logos/favicon.svg" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<meta name="apple-mobile-web-app-title" content="{{ website_cv.title }}" />
+	<meta name="theme-color" content="#000000" />
+	<link rel="stylesheet" href="/assets/styles/cv.giorgioreale.xyz.css" type="text/css" />
+</head>
+<body id="{% block body_id %}{% endblock %}">
+    {% block aside %}
+    {% endblock %}
+    <section>
+        <header>
+            <nav>
+                <a href="/" aria-label="Home">
+                    <svg>
+                        <use xlink:href="/assets/icons/website/sprites.svg#home" />
+                    </svg>
+                </a>
+                <button id="theme-switch" aria-label="Light/Dark Mode">
+                    <svg>
+                        <use xlink:href="/assets/icons/website/sprites.svg#moon-auto" />
+                    </svg>
+                </button>
+                <a href="/menu" id="menu" aria-label="Menu">
+                    <svg>
+                        <use xlink:href="/assets/icons/website/sprites.svg#menu" />
+                    </svg>
+                </a>
+            </nav>
+        </header>
+        {% block content %}
+        {% endblock %}
+        <footer>
+            <p>
+                <svg>
+                    <use xlink:href="/assets/icons/website/sprites.svg#copyright" />
+                </svg>
+                {{ 'now' | date('Y') }} - <a href="{{ github_repository.link }}" target="_blank">{{ github_repository.name }}</a>
+            </p>
+            <p>
+                &#60;&#47;&#62; with
+                <svg>
+                    <use xlink:href="/assets/icons/website/sprites.svg#love" />
+                </svg>
+                by <a href="https://{{ website_main.domain }}" target="_blank">{{ first_name }} {{ last_name }}</a>
+            </p>
+        </footer>
+    </section>
+</body>
+<script src="/assets/scripts/cv.giorgioreale.xyz.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+footer {
+    padding: 20px 40px 20px 40px;
+    font-size: 0.75rem;
+    font-family: 'Fira Code VF', 'Fira Code', monospace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        padding: 10px 10px 10px 10px;
+    }
+
+    p {
+        text-align: center;
+
+        svg {
+            width: 0.7rem;
+            height: 0.7rem;
+            position: relative;
+            top: -3px;
+            fill: var(--color-text-primary);
+        }
+    }
+
+    p:nth-child(2) {
+
+        svg {
+            fill: #f00;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    @media print {
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id %}homepage{% endblock %}
+
+{% block aside %}
+<aside>
+    <img src="/assets/images/profile-pictures/Giorgio-Reale.webp" alt="{{ first_name }} {{ last_name }}">
+    <h1>{{ first_name }} {{ last_name }}</h1>
+</aside>
+{% endblock %}
+
+{% block content %}
+<main>
+    <h4>Siti Web</h4>
+    <a href="https://{{ website_cv.domain }}/" target="_blank">{{ website_cv.domain }}</a>{% if websites|length > 0 %}, {% endif %}
+    {% for website in websites %}
+    <a href="https://{{ website }}/" target="_blank">{{ website }}</a>{% if loop.last == false  %}, {% endif%}
+    {% endfor %}
+    <h4>Contatti</h4>
+    <a href="mailto:{{ email_main }}">{{ email_main }}</a>, <a href="mailto:{{ email_cv }}">{{ email_cv }}</a>{% if emails|length > 0 %}, {% endif %}
+    {% for email in emails %}
+    <a href="mailto:{{ email }}">{{ email }}</a>{% if loop.last == false  %}, {% endif%}
+    {% endfor %}
+    <h4>Social</h4>
+    <div class="social">
+        {% for social in socials %}
+        <a href="{{ social.link }}" target="_blank" aria-label="{{ social.social_full_name }}" title="{{ social.social_full_name }}" class="{{ social.social_name }}">
+            <svg>
+                <use xlink:href="/assets/icons/website/sprites.svg#{{ social.social_name }}" />
+            </svg>
+            {{ social.profile_nickname }}
+        </a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
