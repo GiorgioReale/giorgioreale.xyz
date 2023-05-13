@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
-
+{% block page_url %}/{% endblock %}
+{% block robots %}index,follow{% endblock %}
 {% block body_id %}homepage{% endblock %}
-
 {% block aside %}
 <aside>
     <img src="/assets/images/profile-pictures/Giorgio-Reale.webp" alt="{{ first_name }} {{ last_name }}">
