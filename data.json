@@ -81,12 +81,20 @@
     "description": "Sono un Developer fortemente affascinato dalla tecnologia ed ho una forte e radicata passione per lo sviluppo software, tanto che ho deciso di farne la mia professione.\nSono una persona pratica: apprendo velocemente, con impegno ed in autonomia.\nNon mi accontento: cerco con costanza di aumentare e migliorare le mie competenze e di approfondire le mie conoscenze.\nMi sono diplomato presso I.T.E. G.B. Bodoni in Amministrazione Finanza e Marketing nell'articolazione Sistemi Informativi Aziendali sviluppando competenze relative alla gestione aziendale nel suo insieme e all'interpretazione di risultati economici. In grado anche di gestire, valutare e adattare sistemi informativi aziendali e software applicativi.",
     "work_experiences": [
         {
+            "role": "Frontend Developer",
+            "company": "Esaedro S.r.l.",
+            "location": "Alberi (PR)",
+            "start_date": "Mag 2023",
+            "end_date": "Presente",
+            "description": ""
+        },
+        {
             "role": "Web Developer Specialist",
             "company": "Custom S.p.A.",
             "location": "Fontevivo (PR)",
             "start_date": "Mar 2023",
-            "end_date": "Presente",
-            "description": ""
+            "end_date": "Mag 2023",
+            "description": "Realizzazione e gestione di portali web ad uso aziendale utilizzando HTML, CSS, PHP, MySQL e JavaScript. In parallelo, mi sono occupato della gestione del software Jira aziendale."
         },
         {
             "role": "Frontend & PHP developer",
