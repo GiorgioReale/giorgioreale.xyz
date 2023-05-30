@@ -12,5 +12,6 @@ echo $twig->render('pages/homepage.html.twig', [
     'email_cv' => $data['email_cv'],
     'position' => $data['position'],
     'github_repository' => $data['github_repository'],
-    'role' => $data['role']
+    'role' => $data['role'],
+    'website_main' => $data['website_main']
 ]);
