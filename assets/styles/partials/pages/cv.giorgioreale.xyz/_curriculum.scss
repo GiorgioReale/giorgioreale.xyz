@@ -115,6 +115,16 @@
             p {
                 margin: 0 0 0 15px;
                 white-space: break-spaces;
+                width: 85%;
+                text-wrap: balance;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: auto;
+                }
+
+                @media print {
+                    width: auto;
+                }
             }
 
             .experience-formation {
