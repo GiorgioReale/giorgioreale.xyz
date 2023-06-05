@@ -72,17 +72,15 @@
                     height: 35px;
                     padding: 5px;
 
-                    @media print {
-                        fill: #444;
-                        width: 25px;
-                        height: 25px
-                    }
-
                     &:hover {
                         fill: var(--color-buttons-primary-hover);
                         background-color: var(--background-buttons-primary-hover);
                     }
                 }
+            }
+
+            @media print {
+                display: none;
             }
         }
     }
@@ -102,10 +100,6 @@
 
             h3 {
                 margin: 60px 0 15px 0;
-
-                &:first-child {
-                    margin: 15px 0 15px 0;
-                }
             }
 
             h4 {
@@ -127,7 +121,20 @@
                 }
             }
 
+            .info {
+
+                h3 {
+                    margin: 15px 0 15px 0;
+                }
+
+                @media print {
+                    page-break-inside: avoid;
+                    padding: 0 0 10px 0;
+                }
+            }
+
             .experience-formation {
+
                 div {
 
                     p {
@@ -140,9 +147,18 @@
                         font-size: 0.75rem;
                     }
                 }
+
+                @media print {
+                    page-break-inside: avoid;
+
+                    div:nth-of-type(n+5) {
+                        display: none;
+                    }
+                }
             }
 
             .other-projects {
+
                 div {
 
                     p,
@@ -164,31 +180,44 @@
                         }
                     }
                 }
+
+                @media print {
+                    page-break-inside: avoid;
+                    padding: 0 0 10px 0;
+                }
             }
 
             .skills {
-                display: flex;
-                justify-content: space-between;
 
-                svg {
-                    width: 60px;
-                    height: 60px;
-                    fill: var(--color-text-primary);
+                div {
+                    display: flex;
+                    justify-content: space-between;
 
-                    @media screen and (max-width: $breakpoint-lg) {
-                        width: 40px;
-                        height: 40px;
+                    svg {
+                        width: 60px;
+                        height: 60px;
+                        fill: var(--color-text-primary);
+
+                        @media screen and (max-width: $breakpoint-lg) {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        @media print {
+                            fill: #444;
+                            width: 30px;
+                            height: 30px
+                        }
                     }
+                }
 
-                    @media print {
-                        fill: #444;
-                        width: 30px;
-                        height: 30px
-                    }
+                @media print {
+                    page-break-inside: avoid;
                 }
             }
 
             .training-courses {
+
                 div {
 
                     p,
@@ -204,6 +233,14 @@
                         }
                     }
                 }
+
+                @media print {
+                    page-break-inside: avoid;
+
+                    div:nth-of-type(n+5) {
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -217,6 +254,17 @@
                 @media screen and (max-width: $breakpoint-lg) {
                     margin: 60px 0 50px 0;
                 }
+            }
+        }
+
+        .more-information-online {
+            display: none;
+            text-align: center;
+            font-size: 0.75rem;
+            margin: 30px 0 0 0;
+
+            @media print {
+                display: block;
             }
         }
 

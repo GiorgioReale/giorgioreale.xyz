@@ -87,6 +87,14 @@ html {
     }
 }
 
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+}
+
 ::selection {
     background: var(--background-selection);
     color: var(--color-selection);

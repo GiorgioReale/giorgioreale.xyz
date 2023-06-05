@@ -30,10 +30,12 @@
 {% endblock %}
 {% block content %}
 <main>
-    <h3 id="info">Informazioni su di me</h3>
-    <p>{{ description }}</p>
-    <h3 id="esperienza">Esperienza</h3>
-    <div class="experience-formation">
+    <div id="info" class="info">
+        <h3>Informazioni su di me</h3>
+        <p>{{ description }}</p>
+    </div>
+    <div id="esperienza" class="experience-formation">
+        <h3>Esperienza</h3>
         {% for work_experience in work_experiences %}
         <div>
             <h4>{{ work_experience.role }}</h4>
@@ -42,9 +44,12 @@
             <p>{{ work_experience.description }}</p>
         </div>
         {% endfor %}
+        {% if work_experiences|length > 4 %}
+        <p class="more-information-online">L'elenco completo delle esperienze lavorative è disponibile su {{ website_cv.domain }}.</p>
+        {% endif %}
     </div>
-    <h3 id="altri-progetti">Altri Progetti</h3>
-    <div class="other-projects">
+    <div id="altri-progetti" class="other-projects">
+        <h3>Altri Progetti</h3>
         {% for project in other_projects %}
         <div>
             <h4>{{ project.title }}</h4>
@@ -54,8 +59,8 @@
         </div>
         {% endfor %}
     </div>
-    <h3 id="formazione">Formazione</h3>
-    <div class="experience-formation">
+    <div id="formazione" class="experience-formation">
+        <h3>Formazione</h3>
         {% for education in educations %}
         <div>
             <h4>{{ education.title }}</h4>
@@ -65,16 +70,18 @@
         </div>
         {% endfor %}
     </div>
-    <h3 id="skills">Skills</h3>
-    <div class="skills">
-        {% for skill in skills %}
-        <svg>
-            <use xlink:href="/assets/icons/website/sprites.svg#{{ skill }}" />
-        </svg>
-        {% endfor %}
+    <div id="skills" class="skills">
+        <h3>Skills</h3>
+        <div>
+            {% for skill in skills %}
+            <svg>
+                <use xlink:href="/assets/icons/website/sprites.svg#{{ skill }}" />
+            </svg>
+            {% endfor %}
+        </div>
     </div>
-    <h3 id="corsi-certificazioni">Corsi & Certificazioni</h3>
-    <div class="training-courses">
+    <div id="corsi-certificazioni" class="training-courses">
+        <h3>Corsi & Certificazioni</h3>
         {% for courses_certification in courses_certifications %}
         <div>
             <h4>{{ courses_certification.title }}</h4>
@@ -86,6 +93,9 @@
             <a href="{{ courses_certification.link }}" target="_blank">Certificato</a>
         </div>
         {% endfor %}
+        {% if courses_certifications|length > 4 %}
+        <p class="more-information-online">L'elenco completo dei corsi e delle certificazioni è disponibile su {{ website_cv.domain }}.</p>
+        {% endif %}
     </div>
     <div class="legal-notice">
         <p>Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base all'art. 13 del D. Lgs. 196/2003 e all'art. 13 GDPR (Regolamento UE 2016/679) ai soli fini della ricerca e selezione del personale.</p>
