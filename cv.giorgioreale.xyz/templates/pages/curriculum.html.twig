@@ -74,9 +74,12 @@
         <h3>Skills</h3>
         <div>
             {% for skill in skills %}
-            <svg>
-                <use xlink:href="/assets/icons/website/sprites.svg#{{ skill }}" />
-            </svg>
+            <div title="{{ skill.name }}">
+                <svg aria-labelledby="{{ skill.icon }}">
+                    <title id="{{ skill.icon }}">{{ skill.name }}</title>
+                    <use xlink:href="/assets/icons/website/sprites.svg#{{ skill.icon }}" />
+                </svg>
+            </div>
             {% endfor %}
         </div>
     </div>

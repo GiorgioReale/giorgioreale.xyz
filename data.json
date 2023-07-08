@@ -158,12 +158,30 @@
         }
     ],
     "skills": [
-        "sass-scss",
-        "javascript",
-        "php",
-        "git",
-        "docker",
-        "linux"
+        {
+            "name": "Sass / SCSS",
+            "icon": "sass-scss"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "javascript"
+        },
+        {
+            "name": "PHP",
+            "icon": "php"
+        },
+        {
+            "name": "Git",
+            "icon": "git"
+        },
+        {
+            "name": "Docker",
+            "icon": "docker"
+        },
+        {
+            "name": "Linux",
+            "icon": "linux"
+        }
     ],
     "courses_certifications": [
         {
