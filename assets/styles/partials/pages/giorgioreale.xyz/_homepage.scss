@@ -159,6 +159,24 @@
 					}
 				}
 
+				a.mastodon {
+					background-color: #6364ff;
+					color: #fff;
+
+					svg {
+						fill: #fff;
+					}
+
+					&:hover {
+						background-color: darken(#6364ff, 10%);
+						color: #fff;
+
+						svg {
+							fill: #fff;
+						}
+					}
+				}
+
 				a.reddit {
 					background-color: #ff4300;
 					color: #fff;

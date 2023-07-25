@@ -66,6 +66,12 @@
             "profile_nickname": "@GiorgioRealeXYZ"
         },
         {
+            "social_name": "mastodon",
+            "social_full_name": "Mastodon",
+            "link": "https://mastodon.social/@giorgioreale",
+            "profile_nickname": "@giorgioreale@mastodon.social"
+        },
+        {
             "social_name": "reddit",
             "social_full_name": "Reddit",
             "link": "https://www.reddit.com/user/GiorgioReale",
