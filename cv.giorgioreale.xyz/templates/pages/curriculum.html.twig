@@ -5,16 +5,23 @@
 {% block body_id %}curriculum{% endblock %}
 {% block aside %}
 <aside>
-    <img src="assets/images/profile-pictures/Giorgio-Reale.jpg" alt="{{ first_name }} {{ last_name }}">
-    <h1>{{ first_name }} {{ last_name }}</h1>
-    <h2>{{ role }}</h2>
-    <ul>
-        <li><b>Città</b>:<br>{{ position.locality }}</li>
-        <li><b>Data di nascita</b>:<br>{{ date_of_birth }} ({{ age }})
-        </li>
-        <li><b>Sito Web</b>:<br><a href="https://{{ website_main.domain }}/">{{ website_main.domain }}</a></li>
-        <li><b>E-Mail</b>:<br><a href="mailto:{{ email_cv }}">{{ email_cv }}</a></li>
-    </ul>
+    <div>
+        <img src="assets/images/profile-pictures/Giorgio-Reale.jpg" alt="{{ first_name }} {{ last_name }}">
+    </div>
+    <div>
+        <h1>{{ first_name }} {{ last_name }}</h1>
+        <h2>{{ role }}</h2>
+    </div>
+    <div>
+        <p>Città:</p>
+        <p>{{ position.locality }}</p>
+        <p>Data di nascita:</p>
+        <p>{{ date_of_birth }} ({{ age }})</p>
+        <p>Sito Web:</p>
+        <p><a href="https://{{ website_main.domain }}/">{{ website_main.domain }}</a></p>
+        <p>E-Mail:</p>
+        <p><a href="mailto:{{ email_cv }}">{{ email_cv }}</a></p>
+    </div>
     <div>
         {% for social in socials %}
         {% if social.social_name in ['linkedin', 'github', 'gitlab'] %}

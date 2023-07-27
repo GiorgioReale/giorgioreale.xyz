@@ -9,14 +9,6 @@ header {
     justify-content: flex-end;
     align-items: center;
 
-	@media screen and (max-width: $breakpoint-lg) {
-		padding: 10px 10px 10px 10px;
-	}
-
-	@media print {
-		display: none;
-	}
-
 	nav {
 		display: flex;
 		flex-direction: row;
@@ -47,5 +39,13 @@ header {
 				}
 			}
 		}
+	}
+
+	@media screen and (max-width: $breakpoint-lg) {
+		padding: 10px 10px 10px 10px;
+	}
+
+	@media print {
+		display: none;
 	}
 }

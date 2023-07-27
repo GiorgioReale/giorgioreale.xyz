@@ -11,10 +11,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: $breakpoint-lg) {
-        padding: 10px 10px 10px 10px;
-    }
-
     p {
         text-align: center;
 
@@ -25,11 +21,8 @@ footer {
             top: -3px;
             fill: var(--color-text-primary);
         }
-    }
 
-    p:nth-child(2) {
-
-        svg {
+        &:nth-child(2) svg {
             fill: #f00;
         }
     }
@@ -38,6 +31,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         gap: 5px;
+        padding: 10px 10px 10px 10px;
     }
 
     @media print {
