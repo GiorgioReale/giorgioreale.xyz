@@ -4,7 +4,9 @@ This repository contains the source code for the [giorgioreale.xyz](https://gior
 
 ## Prerequisites
 
-- Docker: You need to have Docker installed on your system. If you don't have it, you can download it from [Docker's official website](https://www.docker.com/get-started).
+- **Docker**: You need to have Docker installed on your system. If you don't have it, you can download it from [Docker's official website](https://www.docker.com/get-started).
+
+- **EditorConfig Plugin**: For consistent code formatting across the project, make sure you have an EditorConfig plugin or extension installed in your preferred code editor.
 
 ## Setup
 
@@ -28,8 +30,8 @@ To set up the project, follow these steps:
    docker compose up --build
    ```
 
-4. Access the websites:  
-at http://127.0.0.1:8080/ for giorgioreale.xyz;  
+4. Access the websites:
+at http://127.0.0.1:8080/ for giorgioreale.xyz;
 at http://127.0.0.1:8081/ for cv.giorgioreale.xyz.
 
 ## Contributing
