@@ -169,8 +169,8 @@
             "icon": "sass-scss"
         },
         {
-            "name": "JavaScript",
-            "icon": "javascript"
+            "name": "TypeScript",
+            "icon": "typescript"
         },
         {
             "name": "PHP",
