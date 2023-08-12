@@ -30,8 +30,8 @@ To set up the project, follow these steps:
    docker compose up --build
    ```
 
-4. Access the websites:
-at http://127.0.0.1:8080/ for giorgioreale.xyz;
+4. Access the websites:   
+at http://127.0.0.1:8080/ for giorgioreale.xyz;   
 at http://127.0.0.1:8081/ for cv.giorgioreale.xyz.
 
 ## Contributing
