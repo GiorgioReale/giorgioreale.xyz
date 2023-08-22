@@ -27,7 +27,7 @@ $breakpoint-xxl: 1400px;
 	--color-scheme: light;
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	--background-main: #000;
 	--background-main-reverse: #fff;
 	--color-text-primary: #bbb;
