@@ -16,6 +16,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeSpeed;
     font-variant-ligatures: none;
+    overflow-anchor: auto;
 
     body {
         min-height: 100vh;
