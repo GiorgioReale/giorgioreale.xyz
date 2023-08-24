@@ -214,7 +214,7 @@
                 padding: 15px 30px 15px 30px;
                 margin: 10px 0 0 0;
                 font-size: 0.9rem;
-                font-family: 'Red Hat Display VF', 'Red Hat Display', sans-serif;
+                font-family: var(--font-family-sans-serif);
                 cursor: pointer;
 
                 &:hover {

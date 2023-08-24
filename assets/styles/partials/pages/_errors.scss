@@ -4,7 +4,7 @@
     text-align: center;
 
     h1 {
-        font-family: 'Fira Code VF', 'Fira Code', monospace;
+        font-family: var(--font-family-monospace);
         font-variation-settings: 'wght' 400;
         font-weight: 400;
         line-height: 0.8;

@@ -3,7 +3,7 @@
 footer {
     padding: 20px 40px 20px 40px;
     font-size: 0.75rem;
-    font-family: 'Fira Code VF', 'Fira Code', monospace;
+    font-family: var(--font-family-monospace);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
