@@ -20,6 +20,10 @@
 
         span {
             color: var(--color-text-primary-reverse);
+
+            @media (prefers-contrast: more) {
+                color: var(--color-text-primary);
+            }
         }
     }
 

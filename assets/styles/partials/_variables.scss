@@ -25,6 +25,21 @@ $breakpoint-xxl: 1400px;
 	--background-selection-reverse: #ffffffcc;
 	--color-selection-reverse: #000;
 	--color-scheme: light;
+
+	@media (prefers-contrast: more) {
+		--color-text-primary: #000;
+		--color-text-primary-reverse: #fff;
+		--color-links: #000;
+		--color-links-hover: #808080;
+		--color-buttons-primary: #fff;
+		--background-buttons-primary: #000;
+		--color-buttons-primary-hover: #fff;
+		--background-buttons-primary-hover: #808080;
+		--color-buttons-primary-reverse: #000;
+		--background-buttons-primary-reverse: #fff;
+		--color-buttons-primary-hover-reverse: #000;
+		--background-buttons-primary-hover-reverse: #808080;
+	}
 }
 
 html[data-theme="dark"] {
@@ -48,4 +63,19 @@ html[data-theme="dark"] {
 	--background-selection-reverse: #000000cc;
 	--color-selection-reverse: #fff;
 	--color-scheme: dark;
+
+	@media (prefers-contrast: more) {
+        --color-text-primary: #fff;
+        --color-text-primary-reverse: #000;
+        --color-links: #fff;
+        --color-links-hover: #808080;
+        --color-buttons-primary: #000;
+        --background-buttons-primary: #fff;
+        --color-buttons-primary-hover: #000;
+        --background-buttons-primary-hover: #808080;
+        --color-buttons-primary-reverse: #fff;
+        --background-buttons-primary-reverse: #000;
+        --color-buttons-primary-hover-reverse: #fff;
+        --background-buttons-primary-hover-reverse: #808080;
+	}
 }
