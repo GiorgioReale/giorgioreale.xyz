@@ -79,3 +79,13 @@ html[data-theme="dark"] {
         --background-buttons-primary-hover-reverse: #808080;
 	}
 }
+
+html {
+    --font-family-sans-serif: 'Red Hat Display VF', 'Red Hat Display', sans-serif;
+    --font-family-monospace: 'Fira Code VF', 'Fira Code', monospace;
+
+    @media (prefers-reduced-data: reduce) {
+        --font-family-sans-serif: system-ui;
+        --font-family-monospace: system-ui;
+    }
+}
