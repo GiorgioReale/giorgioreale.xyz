@@ -2,6 +2,12 @@
 
 :root {
     color-scheme: var(--color-scheme);
+    view-transition-name: root;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0s;
 }
 
 html {
