@@ -1,0 +1,134 @@
+@use '../../variables' as *;
+@use '../mixins' as *;
+
+body#homepage {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+
+	>aside {
+
+		>img {
+			border-radius: 100%;
+			width: 250px;
+			max-width: 75%;
+			background-color: var(--color-text-primary);
+		}
+	}
+
+	>section {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: stretch;
+
+		>main {
+			margin: 0 0 auto 0;
+
+			>h4 {
+				padding: 60px 0 15px 0;
+
+				&:first-child {
+					padding: 0 0 15px 0;
+				}
+			}
+
+			>div.social {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-content: center;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 10px;
+
+				>a {
+					background-color: var(--background-buttons-primary);
+					width: fit-content;
+					padding: 7.5px 7.5px 7.5px 7.5px;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					align-content: center;
+					justify-content: center;
+					align-items: center;
+
+					>svg {
+						fill: var(--color-buttons-primary);
+						width: 30px;
+						height: 30px;
+						margin: 0 10px 0 0;
+					}
+
+					&:hover {
+						background-color: var(--background-buttons-primary-hover);
+
+						>svg {
+							fill: var(--color-buttons-primary-hover);
+						}
+					}
+				}
+
+				>a.linkedin {
+                    @include social-link($background: #0a66c2, $color: #fff);
+				}
+
+				>a.github {
+                    @include social-link($background: #171515, $color: #fff);
+				}
+
+				>a.gitlab {
+                    @include social-link($background: #fca121, $color: #fff);
+				}
+
+				>a.twitter {
+                    @include social-link($background: #1d9bf0, $color: #fff);
+				}
+
+				>a.mastodon {
+                    @include social-link($background: #6364ff, $color: #fff);
+				}
+
+				>a.reddit {
+                    @include social-link($background: #ff4300, $color: #fff);
+				}
+
+				>a.instagram {
+                    @include social-link($color: #fff);
+					background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+
+					&:hover {
+						background: radial-gradient(circle at 30% 107%, darken(#fdf497, 10%) 0%, darken(#fdf497, 10%) 5%, darken(#fd5949, 10%) 45%, darken(#d6249f, 10%) 60%, darken(#285aeb, 10%) 90%);
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-lg) {
+		flex-direction: column;
+
+		>aside {
+			flex: none;
+			position: relative;
+			height: auto;
+			border-right: 0;
+			padding: 10px;
+
+			>img {
+				width: 200px;
+			}
+		}
+
+		>section {
+			flex: none;
+			min-height: calc(100vh - 292px);
+			min-height: calc(100dvh - 292px);
+		}
+	}
+}

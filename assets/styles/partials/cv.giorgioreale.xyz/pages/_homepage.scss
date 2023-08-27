@@ -1,6 +1,6 @@
 @use '../../variables' as *;
 
-#homepage {
+body#homepage {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -8,26 +8,16 @@
 	justify-content: space-between;
 	align-items: stretch;
 
-	aside {
-		flex: 1;
-		position: sticky;
-		top: 0;
-		height: 100vh;
-		height: 100dvh;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
+	>aside {
 		background-image: url("/assets/images/home-background/home-background.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+        border-right: none;
 	}
 
-	section {
-		flex: 2;
+	>section {
+		flex: 5;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -35,17 +25,17 @@
 		justify-content: center;
 		align-items: stretch;
 
-		main {
+		>main {
 
-			h2 {
+			>h2 {
 				font-variation-settings: 'wght' 400;
 				font-weight: 400;
 				margin: 0 0 5px 0;
 			}
 
-			a {
+			>a {
 
-				svg {
+				>svg {
 					fill: var(--color-buttons-primary);
 					background-color: var(--background-buttons-primary);
 					width: 45px;
@@ -63,15 +53,16 @@
 	@media screen and (max-width: $breakpoint-lg) {
 		flex-direction: column;
 
-		aside {
+		>aside {
 			flex: none;
 			position: relative;
 			height: auto;
 			aspect-ratio: 2/1;
 			background-image: url("/assets/images/home-background/home-background-mobile.jpg");
+            border-bottom: none;
 		}
 
-		section {
+		>section {
 			flex: none;
 			min-height: calc(100vh - (100vw / 2));
 			min-height: calc(100dvh - (100vw / 2));
@@ -79,7 +70,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 
-			main {
+			>main {
 				margin: auto auto auto auto;
 			}
 		}
