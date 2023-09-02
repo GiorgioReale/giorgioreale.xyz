@@ -106,6 +106,27 @@ body#homepage {
 						background: radial-gradient(circle at 30% 107%, darken(#fdf497, 10%) 0%, darken(#fdf497, 10%) 5%, darken(#fd5949, 10%) 45%, darken(#d6249f, 10%) 60%, darken(#285aeb, 10%) 90%);
 					}
 				}
+
+                >a[class] {
+
+                    @media (prefers-contrast: more) {
+                        color: var(--color-buttons-primary);
+                        background: var(--background-buttons-primary);
+
+                        svg {
+                            fill: var(--color-buttons-primary);
+                        }
+
+                        &:hover {
+                            color: var(--color-buttons-primary-hover);
+                            background: var(--background-buttons-primary-hover);
+
+                            >svg {
+                                fill: var(--color-buttons-primary-hover);
+                            }
+                        }
+                    }
+                }
 			}
 		}
 	}

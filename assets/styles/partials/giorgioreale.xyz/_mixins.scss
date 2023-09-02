@@ -15,22 +15,4 @@
             background: darken($background, 10%);
         }
     }
-
-    @media (prefers-contrast: more) {
-        color: var(--color-buttons-primary) !important;
-        background: var(--background-buttons-primary) !important;
-
-        svg {
-            fill: var(--color-buttons-primary) !important;
-        }
-
-        &:hover {
-            color: var(--color-buttons-primary-hover) !important;
-            background-color: var(--background-buttons-primary-hover) !important;
-
-            >svg {
-                fill: var(--color-buttons-primary-hover) !important;
-            }
-        }
-    }
 }
