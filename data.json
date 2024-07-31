@@ -87,12 +87,20 @@
     "description": "Sono uno sviluppatore appassionato di tecnologia con un profondo interesse per lo sviluppo front-end, che è diventato il fulcro della mia carriera. La mia natura pratica mi permette di apprendere velocemente e autonomamente, sempre impegnato nell'approfondimento delle mie competenze. Mai soddisfatto, continuo a cercare modi per migliorare e ampliare le mie abilità.\nHo conseguito il diploma presso l'I.T.E. G.B. Bodoni di Parma in Amministrazione, Finanza e Marketing, specializzandomi in Sistemi Informativi Aziendali. Questo mi ha dotato di competenze nella gestione aziendale complessiva e nell'interpretazione di risultati economici, oltre a fornirmi la capacità di gestire, valutare e adattare sistemi informativi e software aziendali.",
     "work_experiences": [
         {
+            "role": "Full Stack Developer",
+            "company": "LetzFair S.r.l.",
+            "location": "Reggio nell'Emilia (RE)",
+            "start_date": "Dic 2023",
+            "end_date": "Presente",
+            "description": "Lavoro come Developer Web Full Stack, contribuendo allo sviluppo di web-app e applicazioni mobili. Mi occupo di PHP, MySQL, Vanilla JavaScript, HTML, CSS, React e gestione server Linux. Contribuisco all'ottimizzazione delle prestazioni e al bugfixing delle applicazioni esistenti."
+        },
+        {
             "role": "Frontend Developer",
             "company": "Esaedro S.r.l.",
             "location": "Alberi (PR)",
             "start_date": "Mag 2023",
-            "end_date": "Presente",
-            "description": ""
+            "end_date": "Dic 2023",
+            "description": "Ho lavorato come Programmatore presso un'azienda nella distribuzione e assistenza di software gestionale per PMI. Le mie mansioni includevano lo sviluppo front-end utilizzando JavaScript, TypeScript, React e SQL. Ho acquisito competenze organizzative e relazionali lavorando con colleghi."
         },
         {
             "role": "Web Developer Specialist",
